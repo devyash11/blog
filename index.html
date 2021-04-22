@@ -164,7 +164,6 @@
         var tl2 = new TimelineMax();
         var tl3 = new TimelineMax();
         var tl4 = new TimelineMax();
-        var tl5 = new TimelineMax();
         
         /*global ScrollMagic*/
         const controller = new ScrollMagic.Controller();
@@ -189,8 +188,6 @@
 
         tl4.from("#myCarousel", 2, {opacity:0});
         tl4.to('#myCarousel', 2, {opacity:1});
-        
-        tl5.from("#family", 0.5, {opacity:0});
 
         const scene = new ScrollMagic.Scene({
             triggerElement: "#sec1",
@@ -237,15 +234,6 @@
         })
 
         .setTween(tl4)
-            .addTo(controller);
-        
-        const scene5 = new ScrollMagic.Scene({
-            triggerElement: "#myCarousel",
-            triggerHook:"onLeave",
-            duration:"100%"
-        })
-
-        .setTween(tl5)
             .addTo(controller);
 
         function updatePercentage(){
