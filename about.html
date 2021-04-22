@@ -1,0 +1,71 @@
+<!doctype html5>
+<html>
+    <head>
+        <title>
+            My Blog
+        </title>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='styles.css' rel='stylesheet'>
+
+    <body id=body>
+
+        <div class=navbar>
+            <br>
+            <span class=tab></span>
+            <li>
+                <a  id=homepage class=navbar-tabs href="https://ide-660f697c8b9843aeb9f29a0774523c42-8080.cs50.ws/index.html">
+                     Home
+                </a>
+            </li>
+
+            <span class=tab></span>
+            <li>
+                <a id=about class=navbar-tabs href="https://ide-660f697c8b9843aeb9f29a0774523c42-8080.cs50.ws/about.html">
+                     About
+                </a>
+            </li>
+
+            <span class=tab></span>
+            <li>
+                <a id=contact class=navbar-tabs href="https://ide-660f697c8b9843aeb9f29a0774523c42-8080.cs50.ws/contact.html">
+                     Contact
+                </a>
+            </li>
+            <span class=tab></span>
+            <li>
+                <a id=none class=navbar-tabs href="https://my-ambitions.000webhostapp.com">
+                    Another WebPage
+                </a>
+            </li>
+            <span class=tab></span>
+            <li>
+                <a class="fa" href="https://www.linkedin.com/in/patil-yash/">
+                    &#xf08c;
+                </a>
+            </li>
+            <br>
+            <br>
+        </div>
+
+        <div class=column><div class='about row'><h2>About</h2></div></div>
+        <div class=column>
+            <div class='row about about-text'><p>I am Yash Patil, AI Enthusiast.</p></div>
+        </div>
+        <div><img src='Iron_Man.jpg' id=about-img></div>
+
+
+        <section class=footer>
+            <p>&#169;2021 by Yash Patil</p>
+        </section>
+
+    </body>
+    <script>
+        document.getElementById("about-img").addEventListener("load", myFunction);
+
+        function myFunction() {
+          $('#about-img').fadeTo(300, 1);
+        }
+    </script>
+</html>
