@@ -162,22 +162,24 @@
 
 
         /*global Power4*/
-        tl.from('#ironman', 2, {y:0, opacity:1, ease: Power4.easeInOut}, '=-1');
-        tl.to("#ironman", 2, {y:-300, opacity:0, ease: Power4.easeInOut}), '=-1';
+        tl.from('#ironman', 3, {opacity:1, ease: Power4.easeInOut}, '=-1');
+        tl.to("#ironman", 0.5, {opacity:0, ease: Power4.easeInOut}, '=-1');
+        tl.from('#text', 0.5, {y:0});
+        tl.to('#text', 0.5, {y:200});
 
-        tl1.from("#blog-title", 0.5, {x:-70, opacity:0, ease: Power4.easeInOut}, '=-.5');
-        tl1.from("#para1", 0.5, {x:70, opacity:0,ease: Power4.easeInOut}, '=-.5');
+        tl1.from("#blog-title", 0.5, {x:-30, opacity:0, ease: Power4.easeInOut}, '=-.5');
+        tl1.from("#para1", 0.5, {x:30, opacity:0,ease: Power4.easeInOut}, '=-.5');
 
-        tl2.from("#ourclass", 1, {y:-100, opacity:0, ease: Power4.easeInOut}, '=-.5');
-        tl2.from("text1", 1, {y:-400, opacity:0, ease: Power4.easeInOut}, '=-.5');
+        tl2.from("#ourclass", 1, {opacity:0, ease: Power4.easeInOut}, '=-.5');
+        tl2.from("text1", 1, {opacity:0, ease: Power4.easeInOut}, '=-.5');
 
-        tl3.from("#ourclass", 3, {y:0, opacity:1, ease: Power4.easeInOut});
-        tl3.to('#ourclass', 3, {y:-700, opacity:0, ease: Power4.easeInOut});
-        tl3.from("text1", 1, {y:0, opacity:1, ease: Power4.easeInOut});
-        tl3.to("text1", 1, {y:-200, opacity:0, ease: Power4.easeInOut});
+        tl3.from("#ourclass", 3, {opacity:1});
+        tl3.to('#ourclass', 3, {opacity:0});
+        tl3.from("text1", 1, {opacity:1});
+        tl3.to("text1", 1, {opacity:0});
 
-        tl4.from("#myCarousel", 2, {opacity:0, ease: Power4.easeInOut});
-        tl4.to('#myCarousel', 2, {opacity:1, ease: Power4.easeInOut});
+        tl4.from("#myCarousel", 2, {opacity:0});
+        tl4.to('#myCarousel', 2, {opacity:1});
 
         const scene = new ScrollMagic.Scene({
             triggerElement: "#sec1",
@@ -192,7 +194,7 @@
         const scene1 = new ScrollMagic.Scene({
             triggerElement: "#sec2",
             triggerHook:"onLeave",
-            duration:"100%"
+            duration:"150%"
         })
 
         .setPin("#sec2")
@@ -220,7 +222,7 @@
         const scene4 = new ScrollMagic.Scene({
             triggerElement: "#text1",
             triggerHook:"onLeave",
-            duration:"150%"
+            duration:"200%"
         })
 
         .setTween(tl4)
