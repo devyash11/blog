@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Ubuntu+Mono&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background:black;
+}
+
+.navbar {
+  width:100%;
+  background:black;
+  opacity:0.5;
+  position:fixed;
+  padding:3px;
+  z-index:10000000;
+  transition:opacity 0.3s;
+}
+
+.navbar:hover {
+  opacity:1;
+}
+
+li {
+  color:white;
+  display: inline;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+a:link{
+  text-decoration:none;
+}
+
+a {
+  color:#ffffff;
+}
+
+.navbar-tabs{
+  font-family:'Poppins';
+  font-size:22px;
+  color:#FFFFFF;
+  padding:3px;
+}
+
+.navbar-tabs:hover
+{
+  color:white;
+  background:black;
+  font-weight:bold;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width:100%;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#sec1 {
+  color:black;
+  text-shadow: 0 0 5px #000;
+}
+
+#sec2 {
+  height: 20vh;
+  align-items:center;
+}
+
+#sec3 {
+  height: 80vh;
+  align-items:center;
+  background:white;
+}
+
+#sec4 {
+  padding:50px;
+  position: relative;
+  font-size: 25px;
+  text-align:justify;
+  margin:50px;
+  text-shadow: 0px 0px 20px #000;
+}
+
+section:before {
+  content: '';
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+  z-index:10000;
+}
+
+section:after {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:10000;
+}
+
+section img {
+  opacity: 1;
+  filter:blur(0px);
+  position:absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.text {
+  position: relative;
+  color:#fff;
+  font-size: 5em;
+  z-index: 1;
+  font-family:'Poppins';
+}
+
+#blog-title {
+  position: relative;
+  color:#fff;
+  font-size: 3em;
+  z-index: 1;
+}
+
+#para {
+  position: relative;
+  color:#000;
+  font-size: 25px;
+  text-align:justify;
+  margin:100px;
+}
+
+#text1 {
+  font-size:3em;
+  font-family:'Comfortaa';
+  text-shadow: 0 0 10px black;
+}
+
+.footer {
+  font-family:'Ubuntu Mono';
+  text-align:center;
+  color:black;
+  background:white;
+  font-size:1.2em;
+  height:5vh;
+  width:100%;
+  position:relative;
+}
+
+#about-img {
+  width:35%;
+  height:auto;
+  top: 200;
+  left:115;
+  position:absolute;
+  display:block;
+  box-shadow:20px 20px 80px #222;
+  opacity:0;
+}
+
+.about {
+  color:white;
+  text-align:center;
+  align-items:flex-end;
+  height:20vh;
+  font-size:2em;
+}
+
+#about {
+    font-family:'Ubuntu Mono', Monospace;
+}
+
+.about-text {
+  font-family:'Comfortaa', Monospace;
+  font-size:1.25em;
+  height:80vh;
+  align-items:baseline;
+}
+
+#about-text {
+  font-family:'Comfortaa', Monospace;
+}
+
+#null {
+  height:5vh;
+}
+
+.column {
+  color:white;
+  float:left;
+  width:50%;
+  height:100vh;
+}
+
+.row {
+  position: relative;
+  width:100%;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#fa {
+  font-size:24px;
+  transition: font-size 0.15s;
+}
+
+#fa:hover {
+  color:#0e76a8;
+  font-size:28px;
+  font-weight:bold;
+}
+
+
+.subnav {
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 22px;
+  color: white;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width:100%;
+  background:darkgray;
+  z-index:10000000;
+  transition:opacity 0.3s;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.subnav:hover .fa {
+    color:black;
+}
+
+.col {
+  float: left;
+  padding:10px;
+  width: 33.33%;
+  justify-content:center;
+}
+
+#gal-title{
+  font-size:3em;
+  height:30vh;
+}
+
+.video,.photo {
+  margin:50px;
+  box-shadow: 10px 8px 20px #fff;
+  border-radius:10px;
+}
