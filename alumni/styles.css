@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Ubuntu+Mono&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background:black;
+}
+
+.navbar {
+  width:100%;
+  background:black;
+  opacity:0.5;
+  position:fixed;
+  padding:3px;
+  z-index:10000000;
+  transition:opacity 0.3s;
+}
+
+.navbar:hover {
+  opacity:1;
+}
+
+li {
+  color:white;
+  display: inline;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+a:link{
+  text-decoration:none;
+}
+
+a {
+  color:#ffffff;
+}
+
+.navbar-tabs{
+  font-family:'Poppins';
+  font-size:22px;
+  color:#FFFFFF;
+  padding:3px;
+}
+
+.navbar-tabs:hover
+{
+  color:white;
+  background:black;
+  font-weight:bold;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  width:100%;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit:cover;
+  color: white;
+}
+
+#sec1 {
+  color:black;
+  text-shadow: 0 0 5px #000;
+}
+
+#sec2 {
+  height:100vh;
+}
+
+#blog-title {
+  text-align:center;
+}
+
+#sec4 {
+  padding:50px;
+  position: relative;
+  font-size: 25px;
+  text-align:justify;
+  margin:50px;
+  text-shadow: 0px 0px 20px #000;
+  box-sizing:border-box;
+}
+
+.section:before {
+  content: '';
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;
+  z-index:10000;
+}
+
+.section:after {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:10000;
+}
+
+.section img {
+  opacity: 1;
+  filter:blur(0px);
+  position:absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  margin-left:auto;
+  margin-right:auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.text {
+  position: relative;
+  color:#fff;
+  font-size: 5em;
+  z-index: 1;
+  font-family:'Poppins';
+}
+
+#blog-title {
+  position: relative;
+  color:#fff;
+  font-size: 3em;
+  z-index: 1;
+}
+
+#para {
+  position: relative;
+  color:#fff;
+  font-size: 25px;
+  text-align:center;
+  margin:100px;
+}
+
+#text1 {
+  font-size:3em;
+  font-family:'Comfortaa';
+  text-shadow: 0 0 10px black;
+}
+
+.footer {
+  font-family:'Ubuntu Mono';
+  text-align:center;
+  color:black;
+  background:white;
+  font-size:1.2em;
+  height:5vh;
+  width:100%;
+  position:relative;
+}
+
+#about-img {
+  width:35%;
+  height:auto;
+  top: 200;
+  left:115;
+  position:absolute;
+  display:block;
+  box-shadow:20px 20px 80px #222;
+}
+
+.about {
+  color:white;
+  text-align:center;
+  align-items:flex-end;
+  height:20vh;
+  font-size:2em;
+}
+
+#about {
+    font-family:'Ubuntu Mono', Monospace;
+}
+
+.about-text {
+  font-family:'Comfortaa', Monospace;
+  font-size:1.25em;
+  height:75vh;
+  align-items:baseline;
+}
+
+#about-text {
+  font-family:'Comfortaa', Monospace;
+}
+
+#null {
+  height:20vh;
+}
+
+.column {
+  color:white;
+  float:left;
+  width:50%;
+  height:100vh;
+}
+
+.row {
+  position: relative;
+  width:100%;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#fa {
+  font-size:24px;
+  transition: font-size 0.15s;
+}
+
+#fa:hover {
+  color:#0e76a8;
+  font-size:28px;
+  font-weight:bold;
+}
+
+
+.subnav {
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 22px;
+  color: white;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width:100%;
+  background:darkgray;
+  z-index:10000000;
+  transition:opacity 0.3s;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.subnav:hover .fa {
+    color:black;
+}
+
+#heading {
+  height:30vh;
+  font-size:2em;
+}
+
+.container-fluid,
+.container {
+    max-width: 1200px;
+}
+
+.profile-card-2 {
+    float:left;
+    width: 300px;
+    height: 400px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.profile-card-2 img {
+    height:400px;
+    width:300px;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #FFF;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+    margin: 5px;
+}
+
+.profile-card-2:hover img {
+    filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+    right: 40px;
+}
+
+.fa-instagram:hover {
+  color:red;
+}
+
+.fa-linkedin:hover {
+  color:#0e76a8;
+}
+
+.fa-twitter:hover {
+  color:#0e76b8;
+}
+
+.fa-blogger:hover {
+  color:orange;
+}
