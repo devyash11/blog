@@ -283,16 +283,46 @@ section img {
 
 #gal-title{
   font-size:3em;
-  height:30vh;
+  height:20vh;
+  align-items:flex-end;
 }
 
 .video,.photo {
   margin:50px;
   box-shadow: 10px 8px 20px #fff;
   border-radius:10px;
-  transition: transform .2s;
+  transition:transform 0.4s;
+
+
+.header-img {
+  width:80%;
+  height:auto;
 }
 
-.video:hover, .photo:hover{
-  transform: scale(1.2);
+#container {
+  display: inline-block;
+  margin:50px;
+  border: 1px solid black;
+  overflow: hidden;
+  align-items:center;
+}
+
+#container img {
+  display: block;
+  transition: transform .4s;
+}
+
+#container .video {
+  display: block;
+  transition: transform .4s;
+}
+
+.container-img {
+  width:400px;
+  height:auto;
+}
+
+#container:hover img {
+  transform: scale(1.15);
+  transform-origin: 50% 50%;
 }
