@@ -365,3 +365,7 @@ a {
 .fa-blogger:hover {
   color:orange;
 }
+
+header {
+  margin:50px;
+}
