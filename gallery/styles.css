@@ -292,7 +292,11 @@ section img {
   box-shadow: 10px 8px 20px #fff;
   border-radius:10px;
   transition:transform 0.4s;
+}
 
+.video:hover, .photo:hover{
+  transform: scale(1.2);
+}
 
 .header-img {
   width:80%;
