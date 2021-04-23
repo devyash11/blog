@@ -290,4 +290,9 @@ section img {
   margin:50px;
   box-shadow: 10px 8px 20px #fff;
   border-radius:10px;
+  transition: transform .2s;
+}
+
+.video:hover, .photo:hover{
+  transform: scale(1.2);
 }
