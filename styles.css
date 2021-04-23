@@ -128,7 +128,7 @@ a {
 }
 
 .text {
-  position: relative;
+  position: absolute;
   color:#fff;
   font-size: 5em;
   z-index: 1;
