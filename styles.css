@@ -369,3 +369,25 @@ a {
 header {
   margin:100px;
 }
+
+#container {
+  display: inline-block;
+  position:relative;
+  overflow: hidden;
+  align-items:center;
+  margin:50px;
+}
+
+#container img {
+  display: block;
+  transition: transform .4s;
+}
+
+.container-img {
+  height:auto;
+}
+
+#container:hover img {
+  transform: scale(1.15);
+  transform-origin: 50% 50%;
+}
